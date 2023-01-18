@@ -29,5 +29,13 @@ body {
     background-color: var(--siyah);
     margin: 10px auto;
     padding: 10px;
-    border-radius: 30px
+    border-radius: 30px;
+
+
+}
+
+.button {
+    display: grid;
+    grid-template-columns: 72px 72px 72px 72px;
+    grid-template-rows: 72px 72px 72px 72px 72px;
 }
