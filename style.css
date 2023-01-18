@@ -1,1 +1,33 @@
 @import './theme.css';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+body {
+    margin-top: 8rem;
+}
+
+#screen {
+    background-color: var(--tusbcgop);
+    border-radius: 30px;
+    height: 165px;
+    width: 340px;
+    margin: auto;
+    font-size: 50px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.container {
+    height: 630px;
+    width: 360px;
+    background-color: var(--siyah);
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 30px
+}
