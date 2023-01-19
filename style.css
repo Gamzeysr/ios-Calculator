@@ -21,6 +21,7 @@ body {
     font-size: 50px;
     padding: 20px;
     overflow: hidden;
+    margin-bottom: 2rem;
 }
 
 .container {
@@ -31,11 +32,58 @@ body {
     padding: 10px;
     border-radius: 30px;
 
-
 }
 
 .button {
+    /*! burada dısarıdaki tuslara hükmediyorum  */
     display: grid;
-    grid-template-columns: 72px 72px 72px 72px;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 72px 72px 72px 72px 72px;
+    color: var(--tuscolor);
+    gap: 10px;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn button {
+    /* border: solid 2px red; */
+    background-color: var(--tusbcgsayi);
+    border: none;
+    color: aliceblue;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    font-size: 30px;
+
+}
+
+.btn button :hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.row1-1 button,
+.row1-2 button,
+.row1-3 button {
+    background-color: var(--tusbcgop);
+    color: var(--siyah);
+}
+
+.row1-4 button,
+.row2-4 button,
+.row3-4 button,
+.row4-4 button {
+    background-color: var(--tusbcgsari);
+}
+
+.button .row5-1 {
+    grid-area: 5 / 1 /6 /3;
+}
+
+.button .row5-1 button {
+    width: 150px;
+    border-radius: 36px;
+    text-align: left;
+    padding-left: 25px;
 }
